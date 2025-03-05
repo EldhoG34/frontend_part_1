@@ -80,10 +80,11 @@ function App() {
     }
     const doc = new Y.Doc();
     const newProvider = new WebsocketProvider(
-      `wss://test-backnd-1.onrender.com`,
-      `${roomId}?file=${currentFile}`,
-      doc
-    );
+  'wss://backndtest.onrender.com/yjs',
+  `${roomId}?file=${currentFile}`,
+  doc
+);
+
     const type = doc.getText('monaco');
     new MonacoBinding(
       type,
