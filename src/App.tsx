@@ -16,7 +16,7 @@ interface FileNode {
   children?: FileNode[];
 }
 
-const SERVER_URL = 'http://localhost:3000';
+const SERVER_URL = 'https://test-backnd-1.onrender.com';
 
 function App() {
   const [socket, setSocket] = useState<Socket | null>(null);
