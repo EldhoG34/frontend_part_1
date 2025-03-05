@@ -80,7 +80,7 @@ function App() {
     }
     const doc = new Y.Doc();
     const newProvider = new WebsocketProvider(
-      `ws://localhost:1234`,
+      `wss://test-backnd-1.onrender.com`,
       `${roomId}?file=${currentFile}`,
       doc
     );
