@@ -88,7 +88,7 @@ function App() {
     }
     const doc = new Y.Doc();
     const newProvider = new WebsocketProvider(
-  'wss://backndtest.onrender.com/yjs',
+  'wss://test-backnd-1.onrender.com/yjs',
   `${roomId}?file=${currentFile}`,
   doc
 );
