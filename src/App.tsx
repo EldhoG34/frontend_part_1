@@ -35,14 +35,15 @@ function App() {
 
   // Initialize socket connection
   useEffect(() => {
-    const newSocket = io(SERVER_URL, {
+   /* const newSocket = io(SERVER_URL, {
     transports: ['websocket'], // Force WebSocket for debugging
     upgrade: false, // Disable upgrade for debugging
     // Enable debug logging
     extraHeaders: {
       'debug': 'true' // Enable Socket.IO debug output
     }
-  });
+  });*/
+     const newSocket = io(SERVER_URL);
     setSocket(newSocket);
 
     newSocket.on('error', (msg: string) => {
